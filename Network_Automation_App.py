@@ -7,8 +7,8 @@ import Generate_Report
 
 # defining module to work with the inventory file
 def Opening_inventory_file():
-    # define the file_path variable to the files absolute path
-    file_path = r"inventory_file.json"
+    # define the file_path variable to the files absolute path (replace with your inventory file)
+    file_path = r"test_inventory_file.json"
 
     # open the inventory file in read mode
     with open(file_path, 'r') as file:
