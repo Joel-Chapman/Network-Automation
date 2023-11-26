@@ -1,0 +1,362 @@
+[
+    {
+        "Management_ip": "192.168.8.1",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "R1",
+        "Domain_Name": "BAIST.LAB",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Default_gateway": "",
+        "Interfaces": [
+            {
+                "Name": "FastEthernet0/0/0",
+                "ipv4": ["10.0.12.1"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet0/1",
+                "ipv4": ["10.0.13.1"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet0/2",
+                "ipv4": ["10.0.10.1"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {
+            "process_id": "1",
+            "Router-id": "1.1.1.1",
+            "networks": [
+                {
+                    "area": 0,
+                    "network": "10.0.12.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 0,
+                    "network": "10.0.13.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 1,
+                    "network": "10.0.10.0",
+                    "wildcard_mask": "0.0.0.255"
+                }
+            ]
+        }
+    },
+    {
+        "Management_ip": "192.168.8.2",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "R2",
+        "Domain_Name": "BAIST.LAB",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Default_gateway": "",
+        "Interfaces": [
+            {
+                "Name": "GigabitEthernet0/0/0",
+                "ipv4": ["10.0.12.2"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet0/0/1",
+                "ipv4": ["10.0.23.2"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet0/1/0",
+                "ipv4": ["10.0.20.1"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {
+            "process_id": "1",
+            "Router-id": "2.2.2.2",
+            "networks": [
+                {
+                    "area": 0,
+                    "network": "10.0.12.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 0,
+                    "network": "10.0.23.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 2,
+                    "network": "10.0.20.0",
+                    "wildcard_mask": "0.0.0.255"
+                }
+            ]
+        }
+    },
+    {
+        "Management_ip": "192.168.8.3",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "R3",
+        "Domain_Name": "BAIST.LAB",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Default_gateway": "",
+        "Interfaces": [
+            {
+                "Name": "GigabitEthernet0/0/0",
+                "ipv4": ["10.0.23.3"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet0/0/1",
+                "ipv4": ["10.0.13.3"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet0/1/0",
+                "ipv4": ["10.0.30.1"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {
+            "process_id": "1",
+            "Router-id": "3.3.3.3",
+            "networks": [
+                {
+                    "area": 0,
+                    "network": "10.0.23.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 0,
+                    "network": "10.0.13.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 3,
+                    "network": "10.0.30.0",
+                    "wildcard_mask": "0.0.0.255"
+                }
+            ]
+        }
+    },
+    {
+        "Management_ip": "192.168.8.4",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "R4",
+        "Domain_Name": "BAIST.LAB",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Default_gateway": "",
+        "Interfaces": [
+            {
+                "Name": "GigabitEthernet2",
+                "ipv4": ["192.168.10.254"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet1",
+                "ipv4": ["10.0.10.2"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {
+            "process_id": "1",
+            "Router-id": "1.0.0.2",
+            "networks": [
+                {
+                    "area": 1,
+                    "network": "192.168.10.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 1,
+                    "network": "10.0.10.0",
+                    "wildcard_mask": "0.0.0.255"
+                }
+            ]
+        }
+    },
+    {
+        "Management_ip": "192.168.8.5",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "R5",
+        "Domain_Name": "BAIST.LAB",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Default_gateway": "",
+        "Interfaces": [
+            {
+                "Name": "GigabitEthernet2",
+                "ipv4": ["192.168.20.254"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet1",
+                "ipv4": ["10.0.20.2"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {
+            "process_id": "1",
+            "Router-id": "2.0.0.2",
+            "networks": [
+                {
+                    "area": 2,
+                    "network": "192.168.20.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 2,
+                    "network": "10.0.20.0",
+                    "wildcard_mask": "0.0.0.255"
+                }
+            ]
+        }
+    },
+    {
+        "Management_ip": "192.168.8.6",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "R6",
+        "Domain_Name": "BAIST.LAB",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Default_gateway": "",
+        "Interfaces": [
+            {
+                "Name": "GigabitEthernet1",
+                "ipv4": ["10.0.30.2"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            },
+            {
+                "Name": "GigabitEthernet2",
+                "ipv4": ["192.168.30.254"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {
+            "process_id": "1",
+            "Router-id": "3.0.0.2",
+            "networks": [
+                {
+                    "area": 3,
+                    "network": "192.168.30.0",
+                    "wildcard_mask": "0.0.0.255"
+                },
+                {
+                    "area": 3,
+                    "network": "10.0.30.0",
+                    "wildcard_mask": "0.0.0.255"
+                }
+            ]
+        }
+    },
+    {
+        "Management_ip": "192.168.8.11",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "SW1",
+        "Domain_Name": "BAIST.LAB",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Default_gateway": "192.168.10.254",
+        "Interfaces": [
+            {
+                "Name": "Vlan 1",
+                "ipv4": ["192.168.10.1"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {
+            "process_id": "1",
+            "Router-id": "1.0.0.3",
+            "networks": [
+                {
+                    "area": 1,
+                    "network": "192.168.10.0",
+                    "wildcard_mask": "0.0.0.255"
+                }
+            ]
+        }
+    },
+    {
+        "Management_ip": "192.168.8.12",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "SW2",
+        "Domain_Name": "BAIST.LAB",
+        "Default_gateway": "192.168.20.254",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Interfaces": [
+            {
+                "Name": "Vlan 1",
+                "ipv4": ["192.168.20.100"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF":{}
+    },
+    {
+        "Management_ip": "192.168.8.13",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "SW3",
+        "Domain_Name": "BAIST.LAB",
+        "Default_gateway": "192.168.30.254",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Interfaces": [
+            {
+                "Name": "Vlan 1",
+                "ipv4": ["192.168.30.1"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {}
+    },
+    {
+        "Management_ip": "192.168.8.14",
+        "Operating_System": "cisco_ios",
+        "Username": "cisco",
+        "Password": "cisco",
+        "Hostname": "SW4",
+        "Domain_Name": "BAIST.LAB",
+        "Default_gateway": "192.168.30.254",
+        "Banner": " # Thou Shalt Not Pass #",
+        "Interfaces": [
+            {
+                "Name": "Vlan 1",
+                "ipv4": ["192.168.30.100"],
+                "subnetmask": ["255.255.255.0"],
+                "status": "enabled"
+            }
+        ],
+        "OSPF": {}
+        
+    }
+]
